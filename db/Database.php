@@ -7,10 +7,10 @@ class Database {
     // Verbindung im Konstruktor aufbauen
     public function __construct() {
 <<<<<<< HEAD
-        $servername = 'db5017626934.hosting-data.io'; 
-        $username = 'dbu5123229';
-        $password = 'myN4kBNPxd74GY!';
-        $dbname = 'dbs14106825';
+        $servername = '*****'; 
+        $username = '*****';
+        $password = '*****';
+        $dbname = '*****';
 =======
         $servername = '******'; 
         $username = '******';
