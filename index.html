@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Register Form</h1>
+
+    <!-- Einfaches HTML-Formular zum Erfassen von Name und E-Mail -->
+    <form id="myForm">
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        required
+        id="formName"
+      /><br /><br />
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        id="formEmail"
+        required
+      /><br /><br />
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+
+    <h2>User List</h2>
+
+    <!-- Hier werden die Benutzerdaten angezeigt -->
+    <div id="userList"></div>
+
+    <!-- JS-Datei zur Formularverarbeitung und API-Kommunikation -->
+    <script src="script.js"></script>
+  </body>
+</html>

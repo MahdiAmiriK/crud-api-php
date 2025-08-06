@@ -1,0 +1,12 @@
+# URL-Rewriting aktivieren
+RewriteEngine On
+
+# Basisverzeichnis des Projekts (z. B. /CRUD/)
+RewriteBase /CRUD/
+
+# Anfrage nur umleiten, wenn keine echte Datei oder Verzeichnis existiert
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Leite alles an index.php weiter (für zentrale Verarbeitung)
+RewriteRule ^ index.php [QSA,L]
