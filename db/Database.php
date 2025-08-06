@@ -6,17 +6,11 @@ class Database {
 
     // Verbindung im Konstruktor aufbauen
     public function __construct() {
-<<<<<<< HEAD
+
         $servername = '*****'; 
         $username = '*****';
         $password = '*****';
         $dbname = '*****';
-=======
-        $servername = '******'; 
-        $username = '******';
-        $password = '******';
-        $dbname = '******';
->>>>>>> 1441233464e94ecc0634c8946fc0903d62b1a815
     
         $this->conn = new mysqli($servername, $username, $password, $dbname);
     
@@ -35,8 +29,6 @@ class Database {
     }
 }
 
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> 1441233464e94ecc0634c8946fc0903d62b1a815
+
+
