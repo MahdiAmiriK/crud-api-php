@@ -7,31 +7,39 @@
     <title>Simple Form</title>
   </head>
   <body>
-    <h1>Register Form</h1>
+    <div class="content">
+      <h1>Simple User Form</h1>
+      <p style="text-align: center; color: #555; margin-top: 1rem">
+        Feel free to try things out – you can add, edit, or delete users as you
+        like!
+      </p>
+      <!-- Einfaches HTML-Formular zum Erfassen von Name und E-Mail -->
+      <form id="myForm">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          id="formName"
+        /><br /><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          id="formEmail"
+          required
+        /><br /><br />
+        <button type="submit" id="submitBtn">Submit</button>
+      </form>
 
-    <!-- Einfaches HTML-Formular zum Erfassen von Name und E-Mail -->
-    <form id="myForm">
-      <input
-        type="text"
-        name="name"
-        placeholder="Name"
-        required
-        id="formName"
-      /><br /><br />
-      <input
-        type="email"
-        name="email"
-        placeholder="Email"
-        id="formEmail"
-        required
-      /><br /><br />
-      <button type="submit" id="submitBtn">Submit</button>
-    </form>
+      <h2>Users List</h2>
 
-    <h2>User List</h2>
+      <!-- Hier werden die Benutzerdaten angezeigt -->
+      <div id="userList"></div>
+    </div>
 
-    <!-- Hier werden die Benutzerdaten angezeigt -->
-    <div id="userList"></div>
+    <!-- Signatur im Footer -->
+    <footer class="footer-signature">Made with ❤️ by Mahdi Amiri</footer>
 
     <!-- JS-Datei zur Formularverarbeitung und API-Kommunikation -->
     <script src="script.js"></script>
